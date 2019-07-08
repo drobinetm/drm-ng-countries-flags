@@ -1,0 +1,27 @@
+{
+  "name": "ngx-mat-drm-countries-flags",
+  "version": "1.0.0",
+  "description":"Angular library to list the countries and their flags in a selection component.",
+  "author": "Diovi Robinet (drobinetm@outlook.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drobinetm/drm-ng-countries-flags.git"
+  },
+  "bugs": {
+    "url": "https://github.com/drobinetm/drm-ng-countries-flags/issues"
+  },
+  "homepage": "https://github.com/drobinetm/drm-ng-countries-flags",
+  "keywords": [
+    "angular",
+    "javascript",
+    "typescript",
+    "typeahead",
+    "directive",
+    "angular-material"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0"
+  }
+}
