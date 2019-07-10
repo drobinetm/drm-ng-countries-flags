@@ -1,12 +1,14 @@
-<mat-form-field style="width: 20%">
-  <mat-select [(value)]="selected" class="form-control form-control-sm" formControlName="select">
-    <mat-select-trigger *ngIf="selected">
-      <mat-icon class="flag-icon flag-icon-{{selected.value.iso}}"></mat-icon>
-      {{selected.value.name}}
-    </mat-select-trigger>
-    <mat-option *ngFor="let country of listCountries" [value]="country">
-      <mat-icon class="flag-icon flag-icon-{{country.iso}}"></mat-icon>
-      {{country.name}}
-    </mat-option>
-  </mat-select>
-</mat-form-field>
+<div class="container-countries-flags">
+  <mat-form-field class="form-countries-flags">
+    <mat-select #selected  formControlName="selected">
+      <mat-select-trigger *ngIf="selected && selected.value">
+        <mat-icon class="flag-icon flag-icon-{{selected.value.code}} flag-icon-squared"></mat-icon>
+        {{selected.value.name}}
+      </mat-select-trigger>
+      <mat-option *ngFor="let country of listCountries" [value]="country">
+        <mat-icon class="flag-icon flag-icon-{{country.code}} flag-icon-squared"></mat-icon>
+        {{country.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
+import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
-import { NgxMatDrmCountriesFlagsComponent } from './ngx-mat-drm-countries-flags.component';
+import {NgxMatDrmCountriesFlagsComponent} from './ngx-mat-drm-countries-flags.component';
 
 @NgModule({
   declarations: [NgxMatDrmCountriesFlagsComponent],
@@ -15,4 +15,5 @@ import { NgxMatDrmCountriesFlagsComponent } from './ngx-mat-drm-countries-flags.
   ],
   exports: [NgxMatDrmCountriesFlagsComponent]
 })
-export class NgxMatDrmCountriesFlagsModule { }
+export class NgxMatDrmCountriesFlagsModule {
+}
