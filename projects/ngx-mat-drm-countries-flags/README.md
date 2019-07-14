@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="src/lib/assets/countries-flags.png" alt="ngx-mat-drm-countries-flags">
+  <img src="https://github.com/drobinetm/drm-ng-countries-flags/blob/master/src/assets/countries-flags.png" alt="ngx-mat-drm-countries-flags">
   <br>
 </h1>
 
