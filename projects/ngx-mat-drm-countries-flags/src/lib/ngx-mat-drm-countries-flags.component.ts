@@ -11,14 +11,14 @@ export class NgxMatDrmCountriesFlagsComponent implements OnInit {
   public listCountries: Country[] = [];
 
   @Input() public max: number = 0;
-  //@Input() public filter: string[] = [];
+  @Input() public filter: string[] = [];
 
   constructor(private ngxMatCountriesFlags: NgxMatDrmCountriesFlagsService) {
   }
 
   ngOnInit() {
     this.ngxMatCountriesFlags.Max = this.max;
-    //this.ngxMatCountriesFlags.Filter = this.filter;
+    this.ngxMatCountriesFlags.Filter = this.filter;
     this.listCountries = this.ngxMatCountriesFlags.listCountries();
   }
 }
