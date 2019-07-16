@@ -88,7 +88,7 @@ export class MyModule {}
 | @Input()
   max: number | Define the number of countries that will be displayed in the selector. (Ex: max=4) | 
 | @Input()
-  filter: array | Define all countries to show in the selector filtered by their ISO 3166-1-alpha-2 code. (Ex: filter=['es', 'br', 'ar', 'uy', 'us', 'gb']) |
+  filter: array | Define all countries to show in the selector filtered by their [ISO 3166-1-alpha-2 code](https://www.iso.org/obp/ui/#search). (Ex: filter=['es', 'br', 'ar', 'uy', 'us', 'gb']) |
 
 ## Development
 
