@@ -25,9 +25,9 @@
 
 ## Dependecies
 
-* [@angular/cdk: "^7.3.7"](#)   
+* [@angular/cdk: "^7.3.7"](https://www.npmjs.com/package/@angular/cdk)   
 * [@angular/material: "^7.3.7"](https://www.npmjs.com/package/@angular/material)
-* [country-list: "^2.1.1"](#)
+* [country-list: "^2.1.1"](https://www.npmjs.com/package/country-list)
 * [flag-icon-css: "^3.3.0"](https://www.npmjs.com/package/flag-icon-css)
 
 ## How to Use
@@ -88,6 +88,15 @@ export class MyModule {}
 <ngx-countries-flags></ngx-countries-flags>
 ```
 
+## Properties (Optional)
+
+| Name | Description |
+|------|-------------|
+| @Input()
+  max: number | Define the number of countries that will be displayed in the selector. (Ex: max=4) | 
+| @Input()
+  filter: array | Define all countries to show in the selector filtered by their ISO 3166-1-alpha-2 code. (Ex: filter=['es', 'br', 'ar', 'uy', 'us', 'gb']) |
+  
 ## Development
 
 ### Prepare your environment
