@@ -1,5 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {Country, Countries} from './models/Country';
+import {Component, Input, OnInit} from '@angular/core';
+import {Country} from './models/Country';
+import {NgxMatDrmCountriesFlagsService} from './ngx-mat-drm-countries-flags.service';
 
 @Component({
   selector: 'ngx-countries-flags',
@@ -8,12 +9,16 @@ import {Country, Countries} from './models/Country';
 })
 export class NgxMatDrmCountriesFlagsComponent implements OnInit {
   public listCountries: Country[] = [];
-  private countries: Countries = new Countries();
 
-  constructor() {
+  @Input() public max: number = 0;
+  //@Input() public filter: string[] = [];
+
+  constructor(private ngxMatCountriesFlags: NgxMatDrmCountriesFlagsService) {
   }
 
   ngOnInit() {
-    this.listCountries = this.countries.allCountriesIso();
+    this.ngxMatCountriesFlags.Max = this.max;
+    //this.ngxMatCountriesFlags.Filter = this.filter;
+    this.listCountries = this.ngxMatCountriesFlags.listCountries();
   }
 }

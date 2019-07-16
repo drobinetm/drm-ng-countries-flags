@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'drm-ng-countries-flags';
+  filter = ['es', 'br', 'ar', 'uy', 'us', 'gb'];
+  max = 4;
 }
