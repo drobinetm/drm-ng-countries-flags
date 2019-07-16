@@ -10,7 +10,7 @@ import {NgxMatDrmCountriesFlagsService} from './ngx-mat-drm-countries-flags.serv
 export class NgxMatDrmCountriesFlagsComponent implements OnInit {
   public listCountries: Country[] = [];
 
-  @Input() public max: number = 0;
+  @Input() public max = 0;
   @Input() public filter: string[] = [];
 
   constructor(private ngxMatCountriesFlags: NgxMatDrmCountriesFlagsService) {
