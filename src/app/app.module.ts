@@ -3,7 +3,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {NgxMatDrmCountriesFlagsModule} from '../../projects/ngx-mat-drm-countries-flags/src/lib/ngx-mat-drm-countries-flags.module';
+import {NgxMatDrmCountriesFlagsModule} from 'ngx-mat-drm-countries-flags';
+import {MatGridListModule, MatCardModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,8 @@ import {NgxMatDrmCountriesFlagsModule} from '../../projects/ngx-mat-drm-countrie
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    MatGridListModule,
+    MatCardModule,
     NgxMatDrmCountriesFlagsModule,
   ],
   providers: [],

@@ -1,2 +1,37 @@
-<ngx-countries-flags [filter]="filter" [max]="max"></ngx-countries-flags>
-
+<mat-card>
+  <mat-card-title>
+    <h1>Ngx Mat Drm Countries Flags </h1>
+  </mat-card-title>
+  <mat-card-content>
+    <mat-grid-list cols="4" rowHeight="100px">
+      <!--List All Countries-->
+      <mat-grid-tile colspan="2" rowspan="2">
+        <mat-grid-tile-header>
+          <h2>List All Countries</h2>
+        </mat-grid-tile-header>
+        <ngx-countries-flags></ngx-countries-flags>
+      </mat-grid-tile>
+      <!--List max countries-->
+      <mat-grid-tile colspan="2" rowspan="2">
+        <mat-grid-tile-header>
+          <h2>List four countries with property: max="4" </h2>
+        </mat-grid-tile-header>
+        <ngx-countries-flags [max]="max"></ngx-countries-flags>
+      </mat-grid-tile>
+      <!--List countries filtered-->
+      <mat-grid-tile colspan="2" rowspan="2">
+        <mat-grid-tile-header>
+          <h2>List countries filtered by ISO with property: filter="['es', 'br', 'ar', 'uy', 'us', 'gb']"</h2>
+        </mat-grid-tile-header>
+        <ngx-countries-flags [filter]="filter"></ngx-countries-flags>
+      </mat-grid-tile>
+      <!--List countries with max and filtered-->
+      <mat-grid-tile colspan="2" rowspan="2">
+        <mat-grid-tile-header>
+          <h2>List countries with max and filtered properties</h2>
+        </mat-grid-tile-header>
+        <ngx-countries-flags [filter]="filter" [max]="max"></ngx-countries-flags>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card-content>
+</mat-card>
