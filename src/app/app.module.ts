@@ -4,7 +4,7 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {NgxMatDrmCountriesFlagsModule} from 'ngx-mat-drm-countries-flags';
-import {MatGridListModule, MatCardModule} from '@angular/material';
+import {MatCardModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,6 @@ import {MatGridListModule, MatCardModule} from '@angular/material';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatGridListModule,
     MatCardModule,
     NgxMatDrmCountriesFlagsModule,
   ],

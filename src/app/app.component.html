@@ -1,37 +1,34 @@
-<mat-card>
-  <mat-card-title>
-    <h1>Ngx Mat Drm Countries Flags </h1>
-  </mat-card-title>
-  <mat-card-content>
-    <mat-grid-list cols="4" rowHeight="100px">
-      <!--List All Countries-->
-      <mat-grid-tile colspan="2" rowspan="2">
-        <mat-grid-tile-header>
-          <h2>List All Countries</h2>
-        </mat-grid-tile-header>
-        <ngx-countries-flags></ngx-countries-flags>
-      </mat-grid-tile>
-      <!--List max countries-->
-      <mat-grid-tile colspan="2" rowspan="2">
-        <mat-grid-tile-header>
-          <h2>List four countries with property: max="4" </h2>
-        </mat-grid-tile-header>
-        <ngx-countries-flags [max]="max"></ngx-countries-flags>
-      </mat-grid-tile>
-      <!--List countries filtered-->
-      <mat-grid-tile colspan="2" rowspan="2">
-        <mat-grid-tile-header>
-          <h2>List countries filtered by ISO with property: filter="['es', 'br', 'ar', 'uy', 'us', 'gb']"</h2>
-        </mat-grid-tile-header>
-        <ngx-countries-flags [filter]="filter"></ngx-countries-flags>
-      </mat-grid-tile>
-      <!--List countries with max and filtered-->
-      <mat-grid-tile colspan="2" rowspan="2">
-        <mat-grid-tile-header>
-          <h2>List countries with max and filtered properties</h2>
-        </mat-grid-tile-header>
-        <ngx-countries-flags [filter]="filter" [max]="max"></ngx-countries-flags>
-      </mat-grid-tile>
-    </mat-grid-list>
-  </mat-card-content>
-</mat-card>
+<div class="container mt-5 w-50">
+  <mat-card>
+    <mat-card-title class="text-center bg-primary text-white mb-5">
+      <h1>Ngx Mat Drm Countries Flags</h1>
+    </mat-card-title>
+    <mat-card-content>
+      <div class="row">
+        <div class="col-12">
+         <h5> <i class="fa fa-check-circle text-size-2"></i>   List All Countries</h5>
+          <ngx-countries-flags></ngx-countries-flags>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h5> <i class="fa fa-check-circle text-size-2"></i>  List four countries with property: max="4" </h5>
+          <ngx-countries-flags [max]="max"></ngx-countries-flags>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h5> <i class="fa fa-check-circle text-size-2"></i>  List countries filtered by ISO with property: filter="['es', 'br', 'ar', 'uy', 'us', 'gb']"</h5>
+          <ngx-countries-flags [filter]="filter"></ngx-countries-flags>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h5> <i class="fa fa-check-circle text-size-2"></i>  List countries with max and filtered properties</h5>
+          <ngx-countries-flags [filter]="filter" [max]="max"></ngx-countries-flags>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
+
