@@ -29,8 +29,6 @@
 
 ## Dependecies
 
-* [@angular/cdk: "^7.3.7"](https://www.npmjs.com/package/@angular/cdk)   
-* [@angular/material: "^7.3.7"](https://www.npmjs.com/package/@angular/material)
 * [country-list: "^2.1.1"](https://www.npmjs.com/package/country-list)
 * [flag-icon-css: "^3.3.0"](https://www.npmjs.com/package/flag-icon-css)
 
@@ -39,8 +37,6 @@
 1. Install through npm:
 ```bash
 # Install dependencies
-$ npm install @angular/cdk@^7.3.7
-$ npm install @angular/material@^7.3.7
 $ npm install country-list@^2.1.1
 $ npm install flag-icon-css@^3.3.0
 # Install library
