@@ -1,6 +1,6 @@
 {
   "name": "ngx-mat-drm-countries-flags",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description":"Angular library to list the countries and their flags in a selection component.",
   "author": "Diovi Robinet (drobinetmorales@gmail.com)",
   "repository": {
